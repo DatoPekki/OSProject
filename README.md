@@ -1,12 +1,12 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: narcOS
 
-Section: __Fill your class section__. 
+Section:4
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
+1.Muhammad Daniel Bin Shamshul Kamar 2218857
+2. Ahmad Zarif Bin Ahmad Rizaudin 2214803
 3. __Fill name__ and __matric no__
 
 ## Rules
