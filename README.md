@@ -7,7 +7,7 @@ Section:4
 Team Mates:
 1.Muhammad Daniel Bin Shamshul Kamar 2218857
 2. Ahmad Zarif Akmal Bin Ahmad Rizaudin 2214803
-3. __Fill name__ and __matric no__
+
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
@@ -27,7 +27,8 @@ Team Mates:
 1. What is the link of the fork OSProject in your repository. ***(1 mark)***
 https://github.com/DatoPekki/OSProject
 
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+2. How many files and folders are in this repository. ***(1 mark)***
+13 files and 3 folders.
 
 
 ## Exploring github codespaces
@@ -59,9 +60,12 @@ https://github.com/DatoPekki/OSProject
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***
+The default operating system used for running the virtual environment in GitHub Codespaces is Ubuntu Linux.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+The options typically available for configuring resources (RAM, Disk, and vCPU) when running GitHub Codespaces are standard and premium.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
+Committing and syncing work regularly helps maintain code integrity, supports teamwork, and ensures that your progress is securely stored and accessible from multiple locations.
 
 ## Exploring the Terminal
 
