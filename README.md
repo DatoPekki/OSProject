@@ -24,7 +24,9 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __Fill answer here__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)***
+https://github.com/DatoPekki/OSProject
+
 2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
 
 
@@ -110,14 +112,19 @@ codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 ```
 
-3. Run the command **df** . ***(1 mark)*** Filesystem     1K-blocks     Used Available Use% Mounted on
+3. Run the command **df** . ***(1 mark)***
+```bash
+ Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10380832  20772752  34% /
 tmpfs              65536        0     65536   0% /dev
 shm                65536        8     65528   1% /dev/shm
 /dev/root       30298176 24327916   5953876  81% /vscode
 /dev/loop3      32847680 10380832  20772752  34% /workspaces
 /dev/sda1       46127956       96  43752284   1% /tmp
-4. Run the command **du** . ***(1 mark)*** 1972    ./images
+```
+4. Run the command **du** . ***(1 mark)***
+```bash
+ 1972    ./images
 8       ./.git/logs/refs/heads
 8       ./.git/logs/refs/remotes/origin
 12      ./.git/logs/refs/remotes
@@ -205,17 +212,31 @@ shm                65536        8     65528   1% /dev/shm
 4       ./.git/branches
 2644    ./.git
 4640    .
-5. Run the command **ls** . ***(1 mark)*** README.md  images
-6. Run the command **ls -asl** . ***(1 mark)*** total 40
+```
+
+5. Run the command **ls** . ***(1 mark)***
+```bash
+ README.md  images
+ ```
+6. Run the command **ls -asl** . ***(1 mark)***
+```bash
+ total 40
  4 drwxrwxrwx+ 4 codespace root  4096 Jun 28 14:41 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jun 28 14:41 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jun 28 14:43 .git
 24 -rw-rw-rw-  1 codespace root 21344 Jun 28 14:48 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 Jun 28 14:41 images
-7. Run the command **free -h** . ***(1 mark)***               total        used        free      shared  buff/cache   available
+```
+
+7. Run the command **free -h** . ***(1 mark)***
+```bash
+               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.3Gi       313Mi        66Mi       6.1Gi       6.1Gi
 Swap:            0B          0B          0B
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** processor       : 0
+```
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***
+```bash
+ processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
 model           : 1
@@ -270,8 +291,11 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
+```
 
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** processor       : 0
+9. Run the command **top** and type **q** to quit. ***(1 mark)***
+```bash
+ processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
 model           : 1
@@ -331,16 +355,42 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6189.4 avail Mem
     914 root      20   0 1798832  47380  30848 S   0.0   0.6   0:00.29 containerd                                                                                                                                         
    1647 codespa+  20   0    2616   1408   1408 S   0.0   0.0   0:00.01 sh                                                                                                                                                 
    1677 root      20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                                                                                                 
-   2266 codespa+  20   0    2624   1664   1664 S   0.0   0.0   0:00.00 sh          
-10. Run the command **uname -a**. ***(1 mark)*** Linux codespaces-ca78a4 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
-11. What is the available free memory in the system. ***(1 mark)*** 6.1Gi
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** 20,772,752 1K-blocks
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** Version: 6.5.0-1022-azure Hardware Architecture: x86_64
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** "ls" lists the contents of a directory.
+   2266 codespa+  20   0    2624   1664   1664 S   0.0   0.0   0:00.00 sh   
+   ```       
+10. Run the command **uname -a**. ***(1 mark)***
+```bash
+Linux codespaces-ca78a4 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+11. What is the available free memory in the system. ***(1 mark)***
+```bash
+ 6.1Gi
+ ```
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
+```bash
+20,772,752 1K-blocks
+```
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+```bash
+ Version: 6.5.0-1022-azure Hardware Architecture: x86_64
+ ```
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+```bash
+"ls" lists the contents of a directory.
 "ls -asl" provides a detailed listing including file sizes in blocks, permissions, number of links, owner, group, size in bytes, and timestamps.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 2560 4K pages
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)***2825.468 MHz for processor 0, 2819.002 MHz for processor 1
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** The top running process is "node" with PID 2330
+```
+15. What is the TLB size of the Virtual CPU. ***(1 mark)***
+```bash
+ 2560 4K pages
+ ```
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)***
+```bash
+2825.468 MHz for processor 0, 2819.002 MHz for processor 1
+```
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+```bash
+The top running process is "node" with PID 2330
+```
 
 ## Running your own container instance.
 
