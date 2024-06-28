@@ -425,6 +425,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
+```
 
 ```bash
 @DatoPekki ➜ /workspaces/OSProject/myroot (main) $ cd /workspaces/OSProject
