@@ -818,11 +818,26 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
+```bash
+The response shows 'Cannot Get /' and Server Error
+The error message indicates that the Node.js container is unable to connect to the MySQL database due to a hostname resolution issue. Specifically, the Node.js container is on a different Docker network (nodejsnet) than the MySQL container (mysqlnet). This network isolation prevents the Node.js container from resolving the hostname mysql-container.
+```
 
-
-
+2. Show the instruction needed to make this work. ***(1 mark)***
+```bash
+@DatoPekki ➜ /workspaces/OSProject/nodejs-app (main) $ docker network connect bridgenetnodejs mysql-container
+@DatoPekki ➜ /workspaces/OSProject/nodejs-app (main) $ docker network connect bridgenetnodejs nodejs-container
+@DatoPekki ➜ /workspaces/OSProject/nodejs-app (main) $ docker exec nodejs-container ping mysql-container
+PING mysql-container (172.25.0.2) 56(84) bytes of data.
+64 bytes from mysql-container.bridgenetnodejs (172.25.0.2): icmp_seq=1 ttl=64 time=0.105 ms
+64 bytes from mysql-container.bridgenetnodejs (172.25.0.2): icmp_seq=2 ttl=64 time=0.074 ms
+64 bytes from mysql-container.bridgenetnodejs (172.25.0.2): icmp_seq=3 ttl=64 time=0.050 ms
+64 bytes from mysql-container.bridgenetnodejs (172.25.0.2): icmp_seq=4 ttl=64 time=0.067 ms
+64 bytes from mysql-container.bridgenetnodejs (172.25.0.2): icmp_seq=5 ttl=64 time=0.084 ms
+64 bytes from mysql-container.bridgenetnodejs (172.25.0.2): icmp_seq=6 ttl=64 time=0.073 ms
+64 bytes from mysql-container.bridgenetnodejs (172.25.0.2): icmp_seq=7 ttl=64 time=0.053 ms
+```
 ## What to submit
 
 1. Make sure to commit all changes on your source control, and make sure your source control is sync to the repository. 
