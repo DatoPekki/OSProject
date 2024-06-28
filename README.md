@@ -426,11 +426,13 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
+```bash
 @DatoPekki ➜ /workspaces/OSProject/myroot (main) $ cd /workspaces/OSProject
 @DatoPekki ➜ /workspaces/OSProject (main) $ sudo chown -R codespace:codespace myroot
 @DatoPekki ➜ /workspaces/OSProject (main) $ ls -l /workspaces/OSProject/myroot
 total 4
 -rw-rw-rw- 1 codespace codespace 12 Jun 28 15:40 helloworld.txt
+```
 
 ## You are on your own, create your own static webpage
 
