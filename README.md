@@ -76,9 +76,11 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** ```bash
+1. Run the command **pwd** . ***(1 mark)***
+ ```bash
 /workspaces/OSProject
 ```
+
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
